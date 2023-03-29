@@ -1,5 +1,5 @@
 ﻿
-CREATE TABLE "CONTACTS" (
+CREATE TABLE CONTACTS (
     "contact_id" INT   NOT NULL,
     "first_name" VARCHAR   NOT NULL,
     "last_name" VARCHAR   NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE "CONTACTS" (
      )
 );
 
-CREATE TABLE "CATEGORY" (
+CREATE TABLE CATEGORY (
     "category_id" VARCHAR   NOT NULL,
     "category_name" VARCHAR   NOT NULL,
     CONSTRAINT "pk_CATEGORY" PRIMARY KEY (
@@ -17,7 +17,7 @@ CREATE TABLE "CATEGORY" (
      )
 );
 
-CREATE TABLE "SUBCATEGORY" (
+CREATE TABLE SUBCATEGORY (
     "subcategory_id" VARCHAR   NOT NULL,
     "subcategory_name" VARCHAR   NOT NULL,
     CONSTRAINT "pk_SUBCATEGORY" PRIMARY KEY (
@@ -25,7 +25,7 @@ CREATE TABLE "SUBCATEGORY" (
      )
 );
 
-CREATE TABLE "CAMPAIGN" (
+CREATE TABLE CAMPAIGN (
     "cf_id" INT   NOT NULL,
     "contact_id" INT   NOT NULL,
     "company_name" VARCHAR   NOT NULL,
@@ -36,8 +36,8 @@ CREATE TABLE "CAMPAIGN" (
     "backers_count" INT   NOT NULL,
     "country" VARCHAR   NOT NULL,
     "currency" VARCHAR   NOT NULL,
-    "launch_date" DATETIME   NOT NULL,
-    "end_date" DATETIME   NOT NULL,
+    "launch_date" DATE   NOT NULL,
+    "end_date" DATE   NOT NULL,
     "category_id" VARCHAR   NOT NULL,
     "subcategory_id" VARCHAR   NOT NULL
 );
