@@ -7,4 +7,6 @@ Next, we create a copy of the cleaned crowfunding dataframe into a new dataframe
 
 Both merged_df and campaing_merged_df were merged into a single dataframe. After dropping the not necessary columns the dataframe was exported and named campaign.csv. 
 
-For contacts CSV file both options were completed by usnig dataframes and regex. 
+For contacts CSV file both options were completed by using dataframes. The CSV files then were inspected to create an ERD sketch (see crowfunding_ERD.png), the schema was used then with PostgreSQL to create and import the data, which was successfully done. 
+
+This project was completed by Katie Bienek and Candida Miranda. 
